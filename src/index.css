@@ -1,13 +1,167 @@
 body {
   margin: 0;
+  padding:0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:rgb(5, 73, 73);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.container{
+  display:flex;
+  position:relative;
+  top:200px;
+  margin: 0 auto;
+  width: 660px;
+  height:316px;
+  background-color:rgb(12, 150, 150);
+  border: 8px orange solid;
+  justify-content: space-around;
+}
+
+.keywords{
+  display:grid;
+  width:50%;
+  height:auto;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:10px;
+  margin:40px 20px;
+  box-sizing:border-box;
+}
+
+.keywords > * {
+  padding: 25px;
+  background-color:grey;
+  box-shadow: 2px 4px rgb(100, 100, 100);
+  text-align:center;
+  font-weight:bold;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.keywords > *:hover{
+  cursor:pointer;
+}
+
+
+.others{
+ 
+  margin: 40px 20px;
+  width: 50%;
+  box-sizing: border-box;
+ 
+}
+
+
+.others > * {
+  display:block;
+  padding:20px;
+  text-align:center;
+  margin:-10px auto;
+}
+
+.shalter1{
+  width:50px;
+  height:20px;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-top:5px;
+}
+
+.shalter1:hover{
+  cursor:pointer;
+}
+
+
+
+.Power{
+  font-weight:bold;
+}
+
+
+.Bank{
+  
+  font-weight:bold;
+  
+}
+
+.keywordname{
+  padding:15px;
+  margin: 15px 20px;
+  background-color:grey;
+  height:20px;
+  font-weight:bold;
+}
+
+.shalter2{
+  width:50px;
+  height:20px;
+  background-color:black;
+  margin: 0 auto;
+  margin-top:5px;
+}
+
+.shalter2 .blue2{
+  width:25px;
+  height:20px;
+  background-color:blue;
+  
+}
+
+.shalter2 .blue2:hover{
+  cursor:pointer;
+}
+
+
+
+.on:active{
+  background-color:orange;
+}
+
+.volume-slider {
+  padding:10px;
+ 
+}
+
+#myinput{
+  width: 300px;
+  height: 5px;
+  background: #DDD;
+  border: none;
+  border-radius: 3px;
+}
+
+#myinput:hover{
+  cursor:pointer;
+}
+
+.titleDrum{
+  position:absolute;
+  top:72%;
+  left:68%;
+  z-index:2;
+  font-weight:bold;
+  font-style:italic;
+}
+
+
+@media screen and (max-width:700px){
+  .container{
+    display:flex;
+    flex: 1 0 330px;
+    flex-wrap:wrap;
+    height:auto;
+    width:auto;
+    margin: 0 50px;
+    position:relative;
+    top:0;
+  }
 }
